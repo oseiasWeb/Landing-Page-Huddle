@@ -1,3 +1,70 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: rgb(182, 174, 174);
+    background: url("../images/bg-desktop.png");
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .page-huddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0 14.5rem;
+}
+
+.container .page-huddle .model-register {
+    height: 90vh;
+    display: block;
+}
+
+.container .page-huddle .model-register .logo{
+    width: 21rem;
+    margin-top: 7rem;
+}
+
+.container .page-huddle .model-register .image-register{
+    margin-top: 8rem;
+}
+
+.container .page-huddle .info-register {
+    width: 100vh;
+    height: 90vh;
+    display: block;
+}
+
+.container .page-huddle .info-register h1,p,button{
+    margin-left: 5rem;
+}
+
+.container .page-huddle .info-register .title{
+    margin-top: 25.5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+}
+
+.container .page-huddle .info-register .description {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-right: 1rem;
+    margin-top: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.container .page-huddle .info-register button {
+    padding: 1.7rem 6.6rem;
+    border-radius: 5rem;
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+}
+.container .page-huddle .info-register a button{
+color: #704BB4;
+}
+
+.container .page-huddle .info-register button:hover {
+    background-color: #e980e7;
+    color: white;
 }
