@@ -3,54 +3,65 @@ html {
 }
 
 body {
-    background: url("../images/bg-desktop.png");
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background: url("../images/bg-desktop.png") center center no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .container .page-huddle{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
     margin: 0 14.5rem;
 }
 
-.container .page-huddle .model-register {
-    height: 90vh;
-    display: block;
+@media(max-width: 768px) {
+    .container .page-huddle {
+        display: block;
+        margin: 0 2rem;
+    }
 }
 
 .container .page-huddle .model-register .logo{
     width: 21rem;
-    margin-top: 7rem;
+    margin-top: 1.4rem;
 }
 
 .container .page-huddle .model-register .image-register{
-    margin-top: 8rem;
+    margin-top: 8.3rem;
+}
+
+@media(max-width: 1024px) {
+    .container .page-huddle .model-register .image-register{
+        max-width: 100%;
+    }
 }
 
 .container .page-huddle .info-register {
-    width: 100vh;
-    height: 90vh;
-    display: block;
+    padding: 15rem 2rem 15rem 5rem;
 }
 
-.container .page-huddle .info-register h1,p,button{
-    margin-left: 5rem;
-}
 
-.container .page-huddle .info-register .title{
-    margin-top: 25.5rem;
+.container .page-huddle .info-register h1{
+    color: white;
+    margin-bottom: 1rem;
     font-size: 4rem;
+    line-height: 6rem;
     font-weight: 700;
-    line-height: 5.6rem;
 }
 
-.container .page-huddle .info-register .description {
-    font-size: 2rem;
+.container .page-huddle .info-register p {
+    color: white;
+    margin-bottom: 4.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    padding-right: 1rem;
-    margin-top: 2.4rem;
     line-height: 2.6rem;
 }
 
@@ -60,11 +71,70 @@ body {
     font-size: 1.9rem;
     margin-top: 2.5rem;
 }
+
 .container .page-huddle .info-register a button{
-color: #704BB4;
+    color: #704BB4;
 }
 
 .container .page-huddle .info-register button:hover {
     background-color: #e980e7;
     color: white;
+}
+
+.container footer {
+    text-align: end;
+    align-items: center;
+    margin: 0 13.5rem;
+}
+
+.container footer .social a i{
+    background-color: #704BB4;
+    font-size: 4rem;
+    margin: 0 1rem;
+    transition: 0.3s ;
+}
+
+.container footer .social a i:hover {
+    color: #e980e7;
+}
+
+@media(max-width: 690px) {
+    .container .page-huddle .model-register .image-register{
+        margin-top: 1rem;
+    }
+
+    .container .page-huddle .info-register {
+        padding: 5rem;
+        text-align: center;
+    }
+
+    .container .page-huddle .info-register h1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-weight: 600;
+    }
+
+    .container .page-huddle .info-register p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .container .page-huddle .info-register a button{
+        margin-top: 0.2rem;
+        font-size: 1.3rem;
+    }
+    
+    .container footer .social {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container footer .social a i{
+        font-size: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
 }
